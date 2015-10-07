@@ -1,0 +1,42 @@
+header
+  //-Banners
+  #presentacion.carousel.slide(data-ride="carousel")
+    
+    ol.carousel-indicators
+      li(data-target="#presentacion" data-slide-to="0").active
+      li(data-target="#presentacion" data-slide-to="1")
+      li(data-target="#presentacion" data-slide-to="2")
+    
+    .carousel-inner(role="listbox")
+      .carousel-item.active
+        img(data-src="holder.js/100px300/")
+      .carousel-item
+        img(data-src="holder.js/100px300/")
+      .carousel-item
+        img(data-src="holder.js/100px300/")
+
+    a(href="#presentacion" role="button" data-slide="prev").left.carousel-control
+      span(aria-hidden="true").icon-prev
+    a(href="#presentacion" role="button" data-slide="next").right.carousel-control
+      span(aria-hidden="true").icon-next
+
+  //-Menu
+  nav.nav-bar.navbar-dark
+    .container
+      a(href="/").navbar-brand DecoracionesGeneralesFC
+      button(class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#menu") &#9776;
+      .collapse.navbar-toggleable-xs(id="menu")
+        ul.nav.navbar-nav.pull-right
+          li.nav-item.dropdown
+            a(data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle servicios  
+            .dropdown-menu
+              a(href="#").dropdown-item decoraciones
+              a(href="#").dropdown-item animaciones
+              a(href="#").dropdown-item fiestas
+              a(href="#").dropdown-item eventos
+              a(href="#").dropdown-item diseño
+              a(href="#").dropdown-item servicios adicionales
+          li.nav-item: a(href="/planes").nav-link planes         
+          li.nav-item: a(href="#").nav-link galeria       
+          li.nav-item: a(href="#").nav-link contacto
+    
