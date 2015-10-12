@@ -19,11 +19,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('stylus').middleware({
-  src: path.join(__dirname, 'public'),  
-  dest: path.join(__dirname, 'public'),
-  compress: true
-}));
+app.use(require('stylus').middleware({src: path.join(__dirname, 'public'),compress: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes.index);

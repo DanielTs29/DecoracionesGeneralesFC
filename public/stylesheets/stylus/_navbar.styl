@@ -8,13 +8,28 @@
   	&:hover
   		color lighten($color, 80%)
 
-  .navbar-nav>li>a
-  	color lighten($color, 90%)
-  	text-transform uppercase
-  	font-weight bold
-  	&:hover, &:focus
-  		color lighten($color, 80%)
-  		
+  .navbar-nav
+    >li>a
+    	color lighten($color, 90%)
+    	text-transform uppercase
+    	font-weight bold
+    	&:hover, &:focus
+    		color lighten($color, 80%)
+    .open
+      .dropdown-menu 
+        >li>a
+          @media (max-width 767px)
+            color lighten($color, 90%)
+            &:hover, &:focus
+              color lighten($color, 80%)
+          
+  
+  .navbar-nav>.open>a, 
+  .navbar-nav>.open>a:hover,
+  .navbar-nav>.open>a:focus 
+    color lighten($color, 90%)
+    background-color darken($color, 30%)
+
   .navbar-toggle
   	border none
   	&:hover, &:focus
@@ -24,3 +39,14 @@
   
   .navbar-collapse
   	border-color darken($color, 30%)
+   
+  .dropdown-menu
+    border 1px solid darken($color, 30%)
+    background-color $color
+    >li>a
+      color lighten($color, 90%)
+      &:hover
+        background-color darken($color, 30%)
+      
+
+
