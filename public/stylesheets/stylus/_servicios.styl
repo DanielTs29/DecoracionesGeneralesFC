@@ -1,0 +1,55 @@
+$tam-serv = 500px
+
+section
+	.servicio
+		position relative
+		padding 30px 10px 10px
+		text-align center
+		border 1px solid $color
+		background darken($color, 95%)
+		z-index 10
+		i
+			font-size 40px																									
+
+#servicios2
+	display flex
+	align-items stretch
+	height auto
+	
+	.info-serv, .info-bg
+		flex 1
+	
+	.info-serv		
+		padding 50px
+		text-align justify
+		background darken($color, 70%)
+		.title
+			position relative
+			text-transform uppercase
+			padding-bottom 10px
+			&:after
+				content ""
+				position absolute
+				bottom 0
+				display block
+				width 200px
+				height 2px
+				background lighten($color, 10%)
+		p
+			margin 20px 0 30px
+			line-height 2
+		ul
+			margin 0
+			padding 0
+			list-style none
+			li
+				font-size 18px
+				margin 10px 0 20px
+				padding-left 1em
+				&:before
+					content "♣   "
+					color lighten($color, 10%)		
+
+	.info-bg
+		background url("http://lorempixel.com/500/500")
+		background-size cover

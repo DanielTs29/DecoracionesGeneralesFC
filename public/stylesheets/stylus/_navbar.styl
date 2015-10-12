@@ -1,0 +1,26 @@
+.navbar-default
+  background-color $color
+  border-color darken($color, 30%)
+
+  .navbar-brand
+  	color lighten($color, 90%)
+  	font-family Righteous
+  	&:hover
+  		color lighten($color, 80%)
+
+  .navbar-nav>li>a
+  	color lighten($color, 90%)
+  	text-transform uppercase
+  	font-weight bold
+  	&:hover, &:focus
+  		color lighten($color, 80%)
+  		
+  .navbar-toggle
+  	border none
+  	&:hover, &:focus
+  		background none
+  	.icon-bar
+  		background-color lighten($color, 90%)          
+  
+  .navbar-collapse
+  	border-color darken($color, 30%)

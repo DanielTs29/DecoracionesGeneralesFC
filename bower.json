@@ -1,0 +1,14 @@
+{
+  "name": "Arppia",
+  "version": "0.0.1",
+  "authors": [
+    "Alexis Sniffer <alexis.sniffer@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.arppia.com",
+  "dependencies": {
+    "jquery": "2.1.4",
+    "modernizr": "2.8.3",
+    "bootstrap": "3.3.5"
+  }
+}
