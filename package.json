@@ -14,9 +14,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "stylus": "^0.52.4"
-  },
-  "devDependencies": {
+    "stylus": "^0.52.4",
     "bower": "^1.5.3"
   }
 }
