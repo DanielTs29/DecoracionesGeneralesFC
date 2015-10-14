@@ -15,6 +15,7 @@
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
     "stylus": "^0.52.4",
-    "bower": "^1.5.3"
+    "bower": "^1.5.3",
+    "express-livereload": "^0.0.24"
   }
 }

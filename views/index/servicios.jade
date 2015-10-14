@@ -4,36 +4,53 @@ section#servicios
 			h2.title servicios
 			p.subtitle  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		.row
+			//-Servicio1
 			.col-lg-3
 				article.servicio
 					.img-item: img(src="http://lorempixel.com/150/150")
 					h3 decoraciones
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias					
+					a.btn.btn-primary(type="button" data-toggle="collapse" data-target="#s1" aria-expanded="false" aria-controls="collapseExample") link					
+					
+			
+			//-Servicio2
 			.col-lg-3
 				article.servicio
 					.img-item: img(src="http://lorempixel.com/150/150")
 					h3 animaciones
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
+					a.btn.btn-primary(type="button" data-toggle="collapse" data-target="#s2" aria-expanded="false" aria-controls="collapseExample") link					
+					
+
+			//-Servicio3
 			.col-lg-3
 				article.servicio
 					.img-item: img(src="http://lorempixel.com/150/150")
 					h3 fiestas
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
+					a.btn.btn-primary(type="button" data-toggle="collapse" data-target="#s3" aria-expanded="false" aria-controls="collapseExample") link					
+				
+			
+			//-Servicio4
 			.col-lg-3
 				article.servicio
 					.img-item: img(src="http://lorempixel.com/150/150")
 					h3 eventos
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
+					a.btn.btn-primary(type="button" data-toggle="collapse" data-target="#s4" aria-expanded="false" aria-controls="collapseExample") link
 
-section#servicios2
-	article.info-serv
-		h2.title Lorem ipsum dolor sit amet
-		p
-			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
-			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quo commodi dolores neque praesentium facere molestias
-		ul
-			li Nulla, quo commodi dolores neque praesentium
-			li Nulla, quo commodi dolores neque praesentium
-			li Nulla, quo commodi dolores neque praesentium
-	article.info-bg
-		img(src="http://lorempixel.com/200/200")
+		.row
+			#s1.collapse.container
+				.well
+					img(src="http://lorempixel.com/200/200")
+			#s2.collapse.container
+				.well
+					img(src="http://lorempixel.com/200/200")
+			#s3.collapse.container
+				.well
+					img(src="http://lorempixel.com/200/200")
+			#s4.collapse.container
+				.well
+					img(src="http://lorempixel.com/200/200")
+
+

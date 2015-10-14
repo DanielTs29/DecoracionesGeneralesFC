@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var livereload = require('express-livereload');
 
 var routes = require('./routes/main');
 
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware({src: path.join(__dirname, 'public'),compress: false}));
 app.use(express.static(path.join(__dirname, 'public')));
+livereload(app, config = {watchDir: process.cwd() + "/views", watchDir: process.cwd() + "/public"});
 
 app.use('/', routes.index);
 

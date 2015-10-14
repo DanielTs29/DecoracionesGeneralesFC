@@ -126,12 +126,9 @@ section .head-section:after {
 section .servicio {
   position: relative;
   text-align: center;
-  z-index: 10;
-}
-section .servicio i {
-  font-size: 40px;
 }
 section .servicio .img-item {
+  position: relative;
   width: 150px;
   height: 150px;
   box-sizing: border-box;
@@ -139,10 +136,13 @@ section .servicio .img-item {
   border-radius: 50% 0 50% 0;
   margin: 0 auto;
   border: solid 3px #880e4f;
+  z-index: 10;
 }
 section .servicio .img-item img {
   width: 100%;
   display: block;
+  transition: all 0.3s;
+  z-index: 1;
 }
 section .servicio .img-item img:hover {
   transform: scale(1.3) rotate(-10deg);
@@ -151,25 +151,23 @@ section .servicio .img-item img:hover {
 section .servicio h3 {
   text-transform: uppercase;
 }
-#servicios2 {
-  display: table;
+.well {
+  text-align: left;
+  background-color: #880e4f;
+  border: 1px solid #5f0a37;
+  border-radius: 4px;
 }
-#servicios2 .info-serv,
-#servicios2 .info-bg {
-  display: table-cell;
-  width: 50%;
-}
-#servicios2 .info-serv {
+#promocion .info-serv {
   padding: 50px;
   text-align: justify;
   background: #290418;
 }
-#servicios2 .info-serv .title {
+#promocion .info-serv .title {
   position: relative;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-#servicios2 .info-serv .title:after {
+#promocion .info-serv .title:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -178,25 +176,21 @@ section .servicio h3 {
   height: 2px;
   background: #a91162;
 }
-#servicios2 .info-serv p {
+#promocion .info-serv p {
   margin: 20px 0 30px;
   line-height: 2;
 }
-#servicios2 .info-serv ul {
+#promocion .info-serv ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-#servicios2 .info-serv ul li {
+#promocion .info-serv ul li {
   font-size: 18px;
   margin: 10px 0 20px;
   padding-left: 1em;
 }
-#servicios2 .info-serv ul li:before {
+#promocion .info-serv ul li:before {
   content: "♣   ";
   color: #a91162;
-}
-#servicios2 .info-bg img {
-  width: 100%;
-  height: inherit;
 }
