@@ -1,8 +1,10 @@
 #promocion
-	.info-serv		
+	position relative
+	overflow hidden
+	.info-serv
 		padding 50px
 		text-align justify
-		background darken($color, 70%)
+		background $color
 		.title
 			position relative
 			text-transform uppercase
@@ -14,7 +16,7 @@
 				display block
 				width 200px
 				height 2px
-				background lighten($color, 10%)
+				background lighten($color, 50%)
 		p
 			margin 20px 0 30px
 			line-height 2
@@ -28,5 +30,8 @@
 				padding-left 1em
 				&:before
 					content "♣   "
-					color lighten($color, 10%)
-	
+					color lighten($color, 50%)
+	.info-slides
+		width 100%
+		height auto
+		background red

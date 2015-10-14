@@ -28,8 +28,13 @@ section .head-section:after {
   height: 2px;
   background: #880e4f;
 }
-.nm {
-  margin: 0;
+.btn-primary {
+  background-color: #880e4f;
+  border-color: #5f0a37;
+}
+.btn-primary:hover {
+  background-color: #6d0b3f;
+  border-color: #52082f;
 }
 .np {
   padding: 0;
@@ -93,9 +98,9 @@ section .head-section:after {
   background-color: #5f0a37;
 }
 #portada {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
 }
 #portada .bg-video {
   position: absolute;
@@ -119,9 +124,22 @@ section .head-section:after {
   position: absolute;
   width: 100%;
 }
+#portada .msn_portada,
+#portada .img_portada {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #portada .msn_portada {
   padding: 30px;
   background: rgba(136,14,79,0.7);
+}
+#portada .img_portada {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
 }
 section .servicio {
   position: relative;
@@ -151,16 +169,14 @@ section .servicio .img-item img:hover {
 section .servicio h3 {
   text-transform: uppercase;
 }
-.well {
-  text-align: left;
-  background-color: #880e4f;
-  border: 1px solid #5f0a37;
-  border-radius: 4px;
+#promocion {
+  position: relative;
+  overflow: hidden;
 }
 #promocion .info-serv {
   padding: 50px;
   text-align: justify;
-  background: #290418;
+  background: #880e4f;
 }
 #promocion .info-serv .title {
   position: relative;
@@ -174,7 +190,7 @@ section .servicio h3 {
   display: block;
   width: 200px;
   height: 2px;
-  background: #a91162;
+  background: #ee5caa;
 }
 #promocion .info-serv p {
   margin: 20px 0 30px;
@@ -192,5 +208,10 @@ section .servicio h3 {
 }
 #promocion .info-serv ul li:before {
   content: "♣   ";
-  color: #a91162;
+  color: #ee5caa;
+}
+#promocion .info-slides {
+  width: 100%;
+  height: auto;
+  background: #f00;
 }
