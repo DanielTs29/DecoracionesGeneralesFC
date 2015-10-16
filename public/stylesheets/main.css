@@ -45,7 +45,7 @@ section .head-section:after {
 }
 .navbar-default {
   background-color: #880e4f;
-  border-color: #5f0a37;
+  border-color: #7a0d47;
 }
 .navbar-default .navbar-brand {
   color: #fcdeee;
@@ -76,7 +76,7 @@ section .head-section:after {
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
   color: #fcdeee;
-  background-color: #5f0a37;
+  background-color: #7a0d47;
 }
 .navbar-default .navbar-toggle {
   border: none;
@@ -89,22 +89,23 @@ section .head-section:after {
   background-color: #fcdeee;
 }
 .navbar-default .navbar-collapse {
-  border-color: #5f0a37;
+  border-color: #7a0d47;
 }
 .navbar-default .dropdown-menu {
-  border: 1px solid #5f0a37;
+  border: 1px solid #7a0d47;
   background-color: #880e4f;
 }
 .navbar-default .dropdown-menu >li>a {
   color: #fcdeee;
 }
 .navbar-default .dropdown-menu >li>a:hover {
-  background-color: #5f0a37;
+  background-color: #7a0d47;
 }
 #portada {
   position: relative;
-  padding: 120px 0;
   overflow: hidden;
+  height: 1px;
+  min-height: 500px;
 }
 #portada .bg-video {
   position: absolute;
@@ -128,21 +129,26 @@ section .head-section:after {
   position: absolute;
   width: 100%;
 }
-#portada .msn_portada,
-#portada .img_portada {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 #portada .msn_portada {
-  padding: 30px;
-  background: rgba(136,14,79,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+  background: rgba(136,14,79,0.6);
+}
+#portada .msn_portada h1 {
+  margin: 0;
 }
 #portada .img_portada {
   position: absolute;
   right: 100px;
-  bottom: 0;
+  bottom: -30px;
   width: 500px;
   height: 500px;
+}
+.h {
+  height: 100%;
 }
 section .servicio {
   position: relative;
@@ -239,8 +245,7 @@ section .servicio h3 {
 }
 #contacto {
   color: #000;
-  background: #fff;
-  background-size: cover;
+  background: #f4f4f4;
 }
 .contacto li {
   list-style: none;
