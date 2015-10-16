@@ -1,0 +1,9 @@
+section#banner
+	.container
+		.row
+			.col-xs-6
+				h2.__title #{name}
+			.col-xs-6
+				ol.breadcrumb.text-right
+					each i in miga
+						li: a(href="#") #{i}

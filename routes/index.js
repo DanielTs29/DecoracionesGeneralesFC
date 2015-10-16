@@ -6,8 +6,12 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/planes', function(req, res) {
-  res.render('planes', { title: 'Express' });
+router.get('/d', function(req, res) {
+  res.render('servicios/decoraciones', { 
+  	title: 'Express',
+  	name: 'decoraciones',
+  	miga: ['inicio', 'servicios', 'decoraciones']
+  });
 });
 
 module.exports = router;

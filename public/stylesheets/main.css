@@ -143,7 +143,6 @@ section .head-section:after {
   bottom: 0;
   width: 500px;
   height: 500px;
-  z-index: 10;
 }
 section .servicio {
   position: relative;
@@ -216,7 +215,7 @@ section .servicio h3 {
 }
 #promocion .info-slides {
   position: relative;
-  height: 100px;
+  height: 19px;
 }
 #galeria .img-item {
   position: relative;
@@ -250,4 +249,27 @@ section .servicio h3 {
 }
 .contacto li span {
   margin-right: 5px;
+}
+#banner {
+  position: relative;
+  padding: 64px 0 0;
+  background-color: #880e4f;
+  background-image: url("../images/fondobanner.png");
+  text-transform: capitalize;
+}
+#banner .__title {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  margin: 0;
+}
+#banner .breadcrumb {
+  background: none;
+}
+#banner .breadcrumb a {
+  color: #f8bedd;
+}
+#menu-lateral {
+  padding-top: 20px;
+  color: #000;
 }
