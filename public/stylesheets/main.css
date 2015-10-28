@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+.align-vertical {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: -moz-flex;
+  -moz-align-items: center;
+  -moz-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 html,
 body {
   width: 100%;
@@ -105,17 +128,28 @@ section .head-section:after {
   position: relative;
   overflow: hidden;
   height: 1px;
-  min-height: 500px;
+  min-height: 100%;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  #portada {
+    background: url("http://lorempixel.com/1000/1000") no-repeat;
+    background-size: cover;
+  }
 }
 #portada .bg-video {
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  z-index: -1;
 }
-#portada .bg-video:after {
+#portada .bg-video video {
+  position: absolute;
+  width: 100%;
+}
+#portada:after {
   content: "";
   display: block;
   position: absolute;
@@ -123,29 +157,24 @@ section .head-section:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
 }
-#portada .bg-video video {
-  position: absolute;
-  width: 100%;
-}
-#portada .msn_portada {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 50px;
-  background: rgba(136,14,79,0.6);
-}
-#portada .msn_portada h1 {
+#portada .titulo {
   margin: 0;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
 }
-#portada .img_portada {
-  position: absolute;
-  right: 100px;
-  bottom: -30px;
-  width: 500px;
-  height: 500px;
+@media (max-width: 768px) {
+  #portada .titulo {
+    font-size: 3em;
+  }
+}
+@media (max-width: 450px) {
+  #portada .titulo {
+    font-size: 2em;
+  }
 }
 .h {
   height: 100%;
