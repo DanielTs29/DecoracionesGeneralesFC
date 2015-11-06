@@ -1,10 +1,34 @@
 extends layout
 
 block content
-	include modulos/banner	
-	.container
-		.row
-			.col-xs-3
-				include modulos/menu-lateral
-			.col-xs-9
-				block servicios
+	//-Banner
+	section#banner
+		.container
+			.row
+				.col-xs-12.text-center
+					h2.__title #{name}
+				.col-xs-12
+					ol.breadcrumb.text-center
+						each i in miga
+							li: a(href="#") #{i}
+
+	//-contenido
+	section#contenido
+		.container
+			.row
+				each item in servicios
+					.col-xs-4					
+						.media
+							.media-left
+								img(src="#{item.imagen}").media-object
+							.media-body
+								h4.media-heading #{item.titulo}
+								p #{item.parrafo}
+
+	//-galeria de trabajos
+	section#trabajos
+		.container
+			.row
+				.col-xs-12
+					.head-section
+						h3.title galeria

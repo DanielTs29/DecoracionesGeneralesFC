@@ -1,0 +1,27 @@
+extends ../servicios
+
+block servicio
+	.container
+		.row
+			.col-xs-12
+				h4 
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa delectus eligendi autem quia 
+					| deleniti laboriosam laborum, error nulla officia. Blanditiis minus, veniam inventore quia!
+			.col-xs-12
+				section#menu-lateral
+					#accordion.panel-group(role="tablist" aria-multiselectable="true")				
+						
+						.panel.panel-default
+							.panel-heading(role="tab" id="menu1")
+								h4.panel-title
+									a(href="#collapse1" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true") 
+										| Adornos			
+							#collapse1.panel-collapse.collapse(role="tabpanel" aria-labelledby="menu1")
+								.panel-body
+									img(src="http://lorempixel.com/300/300").img-responsive
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sunt quaerat, laudantium neque accusantium
+
+						
+							
+
+						

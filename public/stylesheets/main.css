@@ -28,9 +28,8 @@ body {
   height: 100%;
 }
 body {
-  color: #fff;
   padding-top: 50px;
-  background-color: #212121;
+  background-color: #f5f5f5;
 }
 section#servicios,
 section#galeria,
@@ -126,9 +125,9 @@ section .head-section:after {
 }
 #portada {
   position: relative;
-  overflow: hidden;
   height: 1px;
   min-height: 100%;
+  overflow: hidden;
   z-index: 1;
 }
 @media (max-width: 992px) {
@@ -137,7 +136,7 @@ section .head-section:after {
     background-size: cover;
   }
 }
-#portada .bg-video {
+#portada .__bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -145,9 +144,30 @@ section .head-section:after {
   width: 100%;
   z-index: -1;
 }
-#portada .bg-video video {
+#portada .__bg-video video {
   position: absolute;
   width: 100%;
+}
+#portada .__titulo {
+  color: #fff;
+  font-size: 4em;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  #portada .__titulo {
+    font-size: 3em;
+  }
+}
+@media (max-width: 450px) {
+  #portada .__titulo {
+    font-size: 2em;
+  }
+}
+#portada .__subtitulo {
+  color: #ee5caa;
+  font-weight: bold;
 }
 #portada:after {
   content: "";
@@ -159,25 +179,6 @@ section .head-section:after {
   height: 100%;
   background: rgba(0,0,0,0.7);
   z-index: -1;
-}
-#portada .titulo {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lobster', cursive;
-  font-size: 4em;
-}
-@media (max-width: 768px) {
-  #portada .titulo {
-    font-size: 3em;
-  }
-}
-@media (max-width: 450px) {
-  #portada .titulo {
-    font-size: 2em;
-  }
-}
-.h {
-  height: 100%;
 }
 section .servicio {
   position: relative;
@@ -206,6 +207,17 @@ section .servicio .img-item img:hover {
 }
 section .servicio h3 {
   text-transform: uppercase;
+}
+#contenido {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#contenido .media {
+  margin-bottom: 15px;
+}
+#contenido .media-heading {
+  font-weight: bold;
+  text-transform: capitalize;
 }
 #promocion {
   position: relative;
@@ -274,7 +286,7 @@ section .servicio h3 {
 }
 #contacto {
   color: #000;
-  background: #f4f4f4;
+  background: #fefefe;
 }
 .contacto li {
   list-style: none;
@@ -302,8 +314,4 @@ section .servicio h3 {
 }
 #banner .breadcrumb a {
   color: #f8bedd;
-}
-#menu-lateral {
-  padding-top: 20px;
-  color: #000;
 }
